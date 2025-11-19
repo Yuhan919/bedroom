@@ -45,10 +45,27 @@
       background-color: #948caa;
       color: white;
     }
+    @keyframes cloudFloat {
+  0%   { transform: translate(0px, 0px); }
+  25%  { transform: translate(12px, -18px); }
+  50%  { transform: translate(0px, -28px); }
+  75%  { transform: translate(-12px, -18px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+
+    .mid-image {
+  display: block;
+  margin: 60px auto;
+  max-width: 200px;
+  height: auto;
+  animation: cloudFloat 8s ease-in-out infinite;
+}
   </style>
 </head>
 <body>
   <h1>cat</h1>
+  <img src="cat.jpg" alt="decorative image" class="mid-image">
   <p>The Siamese kitten sits by the window, her ears twitching slightly as the hum of cars drifts from afar.<br>
 Her mother speaks of “university,” a distant place where humans go to learn and live.<br>
 But the kitten does not understand.<br>

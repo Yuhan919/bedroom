@@ -45,19 +45,29 @@
       background-color: #948caa;
       color: white;
     }
-    .mid-image {
-      display: block;
-      margin: 15px auto;
-      max-width: 150px;
-      height: auto;
+
+   @keyframes cloudFloat {
+  0%   { transform: translate(0px, 0px); }
+  25%  { transform: translate(12px, -18px); }
+  50%  { transform: translate(0px, -28px); }
+  75%  { transform: translate(-12px, -18px); }
+  100% { transform: translate(0px, 0px); }
 }
 
+
+    .mid-image {
+  display: block;
+  margin: 60px auto;
+  max-width: 200px;
+  height: auto;
+  animation: cloudFloat 8s ease-in-out infinite;
+}
   </style>
 </head>
 
 <body>
   <h1>canvas</h1>
-  <img src="IMG_6983_副本.JPG" alt="decorative image" class="mid-image">
+  <img src="IMG_9274.jpg" alt="decorative image" class="mid-image">
   <p>The canvas bears the weight of every brushstroke and the warmth of the heart. <br>It is both a beginning and a vessel, embracing all expressions and hesitations.</p>
   <a href="../index.html">back</a>
 </body>
